@@ -14,7 +14,8 @@ A pesar de estas limitaciones, el conjunto de variables seleccionado permite un 
 </div>
 
 ### Segunda presentación
-
+<div align="justify">
+  
 Se analiza el efecto de la **tasa de interés de referencia** sobre la **inflación mensual subyacente** del Perú (serie PN01278PM) utilizando datos del Banco Central de Reserva del Perú (BCRP) entre 2013 y 2025. En esta segunda parte se eligió la inflación subyacente en lugar del IPC general porque es menos volátil y refleja mejor la tendencia de fondo de los precios. Así, permite analizar con mayor precisión el efecto de la tasa de referencia sobre la inflación controlada por la política monetaria.
 
 
@@ -23,4 +24,4 @@ El objetivo principal es construir modelos supervisados de predicción a un mes 
 Se verificó la estacionariedad de las series mediante las pruebas ADF y KPSS, concluyendo que ambas variables presentan comportamientos cercanos a la estacionariedad. Posteriormente, se generaron rezagos de la tasa de referencia y se construyó un conjunto de datos para modelado, preservando el orden temporal. Se aplicaron tres modelos predictivos: Regresión Lineal, Ridge y Random Forest, evaluados mediante validación cruzada temporal (TimeSeriesSplit) y un conjunto de prueba (hold-out del 25%).
 
 Los resultados muestran que los modelos lineales (especialmente Ridge) obtienen los mejores desempeños, con un error cuadrático medio (MSE) cercano a 0.035 y un R² en torno a 0.24, mientras que el modelo no lineal (Random Forest) presentó sobreajuste. Estos hallazgos sugieren que la relación entre la tasa de interés de referencia y la inflación subyacente es predominantemente lineal y estable en el corto plazo, confirmando que los métodos lineales son adecuados para capturar la dinámica entre ambas variables.
-
+</div>
